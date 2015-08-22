@@ -21,7 +21,7 @@ var frenchMessage = "";
     frenchMessage += ( frenchLexicon[input[i]] || input[i] ) + " ";
 
   output = document.getElementById('output');
-  output.innerHTML = frenchMessage; 
+  output.innerHTML = "<p>" + frenchMessage + "</p>"; 
   };
 
 
