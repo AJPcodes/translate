@@ -17,9 +17,17 @@ var Greet = (function(greet) {
 
   greet.translateToGerman = function(input) {
 
-  		console.log("Translating to German")
-  		console.log(input);
+  		germanString = "";
+
+  		for(i = 0 ; i < input.length ; i++){
+
+  		germanString += ( germanLexicon[input[i]] || input[i] ) + " ";
+
+
   		output = document.getElementById('output');
+
+  		output.innerHTML = germanString;
+  	}
 
   };
 
