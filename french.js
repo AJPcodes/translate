@@ -22,8 +22,11 @@ var frenchMessage = "";
 
   output = document.getElementById('output');
   output.innerHTML = "<p>" + frenchMessage + "</p>"; 
-  };
 
+  };
+var msg = new SpeechSynthesisUtterance(frenchMessage);
+msg.lang = "fr";
+window.speechSynthesis.speak(msg);
 
   };
 
