@@ -29,6 +29,11 @@ var Greet = (function(greet) {
   		output.innerHTML = "<p>" + germanString + "</p>";
   	}
 
+  	var msg = new SpeechSynthesisUtterance(germanString);
+msg.lang = "de";
+window.speechSynthesis.speak(msg);
+
+
   };
 
 
