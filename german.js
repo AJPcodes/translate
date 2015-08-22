@@ -26,7 +26,7 @@ var Greet = (function(greet) {
 
   		output = document.getElementById('output');
 
-  		output.innerHTML = germanString;
+  		output.innerHTML = "<p>" + germanString + "</p>";
   	}
 
   };
