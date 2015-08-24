@@ -30,7 +30,11 @@ var Greet = (function() {
 
         if (wordsArray.length > 0 && language == 'Italian') {
           Greet.translateItalian(wordsArray);
-        }
+        };
+
+        if (wordsArray.length > 0 && language == 'Norwegian') {
+          Greet.translateToNorwegian(wordsArray);
+        };
     }
 
   };
