@@ -26,6 +26,10 @@ var Greet = (function() {
 
         if (wordsArray.length > 0 && language == 'French') {
           Greet.translateFrench(wordsArray);
+        };
+
+        if (wordsArray.length > 0 && language == 'Italian') {
+          Greet.translateItalian(wordsArray);
         }
     }
 
